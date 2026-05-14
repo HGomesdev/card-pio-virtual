@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Master | Cardápio Digital</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">🍔</div>
+            <h1>Burger Master</h1>
+            <p><span class="status open">Aberto agora</span> • Av. Principal, 123</p>
+        </div>
+    </header>
+
+    <nav class="categories">
+        <button class="cat-btn active" onclick="filterCategory('all', this)">Todos</button>
+        <button class="cat-btn" onclick="filterCategory('burgers', this)">Burgers</button>
+        <button class="cat-btn" onclick="filterCategory('porcoes', this)">Porções</button>
+        <button class="cat-btn" onclick="filterCategory('drinks', this)">Bebidas</button>
+    </nav>
+
+    <main class="menu-container" id="menu">
+    </main>
+
+    <footer class="site-footer">
+        <p>Desenvolvido por <a href="https://wa.me/5518996182918" target="_blank">Hugo Gomes</a></p>
+    </footer>
+
+    <div id="cart-btn" class="cart-btn hidden" onclick="toggleCart()">
+        <span>Meu Pedido (<span id="cart-count">0</span>)</span>
+        <span id="cart-total">R$ 0,00</span>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Seu Pedido</h2>
+                <button class="btn-close-icon" onclick="toggleCart()">✕</button>
+            </div>
+
+            <div id="cart-items">
+            </div>
+
+            <div class="cart-footer">
+                <div class="total-line">
+                    <p>Total:</p>
+                    <strong id="modal-total">R$ 0,00</strong>
+                </div>
+                <input type="text" id="address" placeholder="Digite seu endereço para entrega..." class="input-address">
+                <button class="btn-send" onclick="sendOrder()">Finalizar via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
