@@ -9,7 +9,7 @@ Um sistema completo de **Cardápio Digital Responsivo** projetado para restauran
 
 ## 🚀 Demonstração
 *(Coloque aqui o link do seu GitHub Pages quando subir o projeto)*
-👉 **[Ver o Cardápio Online](https://seugithub.github.io/nome-do-repositorio/)**
+👉 **[Ver o Cardápio Online]([https://seugithub.github.io/nome-do-repositorio/](https://hgomesdev.github.io/card-pio-virtual/))**
 
 ## ✨ Funcionalidades Principais (Features)
 
